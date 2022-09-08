@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+  <com.google.android.exoplayer2.ui.PlayerView android:id="@+id/video_view"
+       android:layout_width="match_parent"
+      app:rewind_increment="10000"
+      app:fastforward_increment="10000"
+      app:controller_layout_id="@layout/exo_playback_control_view"
+android:layout_gravity="center"
+      android:layout_height="200dp">
+
+       <TextView
+           android:id="@+id/topbarText"
+           android:layout_gravity="top"
+           android:textColor="@color/white"
+           android:text="Hello Im here"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+
+  </com.google.android.exoplayer2.ui.PlayerView>
+
+
+</RelativeLayout>

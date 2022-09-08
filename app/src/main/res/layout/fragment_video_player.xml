@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/videoPortion"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:controller_layout_id="@layout/exo_playback_control_view"
+        android:layout_gravity="center"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/topbarText"
+            android:layout_gravity="top"
+            android:textColor="@color/white"
+            android:text="Hello Im here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+  <!--  <ProgressBar
+        android:layout_below="@+id/video_view"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/Progressbar"/>-->
+
+
+    <RelativeLayout
+        android:layout_below="@id/video_view"
+         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="NotSibling">
+        <TextView
+            android:id="@+id/descriptionText"
+           android:layout_marginHorizontal="@dimen/dimen16"
+            android:layout_marginTop="@dimen/dimen16"
+
+            android:text="Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+             android:layout_below="@id/descriptionText"
+            android:id="@+id/btShowmore"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen16"
+            android:text="Read More..."
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_light"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat" />
+
+        <!--<ScrollView
+            android:layout_below="@+id/btShowmore"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:id="@+id/scrollView">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout1">
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/btShowmore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:id="@+id/rv_commnets_list"/>
+
+        <!--<LinearLayout
+            android:id="@+id/aasasas"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include
+            layout="@layout/message_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>-->
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ffffff</color>
+    <color name="primary_dark">#ffffff</color>
+    <color name="primary_darker">#ffffff</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="colorPrimary">#93c948</color>
+    <color name="colorPrimaryDark">#a7eb48</color>
+    <color name="colorAccent">#a7eb48</color>
+    <color name="background_toolbar">#e3333333</color>
+    <color name="c_transparent">#00000000</color>
+    <color name="roseProgess">#ff1a79</color>
+    <color name="bgColoris">#f8629f</color>
+    <color name="mainfontColor">#fefeff</color>
+    <color name="mainBg">#2a3283</color>
+    <color name="colorShimmer">#dddddd</color>
+    <color name="topColor">#242774</color>
+
+
+    <color name="pureWhite">#FFF</color>
+
+    <color name="normal">#FF58585A</color>
+    <color name="pressed">#ffffff</color> // what ever pressed value u want
+
+
+    //Login Page
+
+    <color name="topLogin">#ffffff</color>
+    <color name="bottomLogin">#ffffff</color>
+    <color name="buttonColor">#2000e2</color>
+    <color name="mainColor">#93c948</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <color name="gradient_start">#5770f3</color>
+    <color name="gradient_end">#8e5aeb</color>
+    <color name="profile_desc">#D1D1FF</color>
+    <color name="bg_meta_container">#000000</color>
+    <color name="profile_default_tint">#e0e0e0</color>
+</resources>
